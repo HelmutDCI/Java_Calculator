@@ -1,41 +1,50 @@
 /* === BASIS-STYLES === */
-#calculaitor {
+#calculaitor {  
     font-family: Arial, sans-serif;
     background-color: rgb(63, 62, 62);
-    border-radius: 15vw;
+    border-radius: 15px;
     max-width: 500px;
-    width: 100%;
     overflow: hidden;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 20px; 
 }
 
 /* BUTTON-BEREICH */
 #keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    padding: 10px;
+    gap: 10px; 
+    padding: 20px;
 }
 
 /* DISPLAY */
 #display {
-    width: 100%;
-    padding: 20px;
-    font-size: 3rem;
+    width: 100%; 
+    padding: 20px; 
+    font-size: 3rem; 
     text-align: left;
     border: none;
     background-color: rgb(84, 81, 81);
     color: white;
-    box-sizing: border-box;
+}
+
+/* ZENTRIERUNG */
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    background-image: url(Img/M152Shenron-EX.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* DRAGONBALL BILDER */
 img {
     width: 100%;
     height: auto;
-    object-fit: contain;
-    margin: 0;
+    margin: 0px;
     border: none;
     cursor: pointer;
 }
@@ -43,13 +52,13 @@ img {
 /* BUTTON-STIL */
 button {
     width: 100px;
-    aspect-ratio: 1 / 1;
+    height: 100px;
     margin: 5px;
-    border-radius: 10vw;
+    border-radius: 50px;
     border: none;
     background-color: rgb(84, 81, 81);
     color: white;
-    font-size: 6vw;
+    font-size: 2.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -63,26 +72,11 @@ button:hover {
 button:active {
     background-color: rgb(189, 189, 189);
 }
-
 /* OPERATOR-BUTTONS */
 .operator-btn {
     background-color: orange;
     color: black;
 }
-
-/* ZENTRIERUNG */
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('Img/M152Shenron-EX.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 /* === RESPONSIVE MEDIA QUERY === */
 @media (max-width: 600px) {
     #calculaitor {
