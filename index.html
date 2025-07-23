@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="calculaitor">
+    <input type="text" id="display" readonly />
+    <div id="keys">
+      <button onclick="appendtoDisplay('+')" class="operator-btn">+</button>
+      <button onclick="appendtoDisplay('7')"><img src="Img/Dragon_Ball_7.webp" alt="7 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('8')"><img src="Img/Dragon_Ball_8.png" alt="8 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('9')"><img src="Img/Dragon_Ball_9.png" alt="9 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('-')" class="operator-btn">-</button>
+      <button onclick="appendtoDisplay('4')"><img src="Img/Dragon_Ball_4.webp" alt="4 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('5')"><img src="Img/Dragon_Ball_5.webp" alt="5 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('6')"><img src="Img/Dragon_Ball_6.webp" alt="6 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('*')" class="operator-btn">*</button>
+      <button onclick="appendtoDisplay('1')"><img src="Img/Dragon_Ball_1 (1).webp" alt="1 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('2')"><img src="Img/Dragon_Ball_2.webp" alt="2 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('3')"><img src="Img/Dragon_Ball_3.webp" alt="3 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('/')" class="operator-btn">/</button>
+      <button onclick="appendtoDisplay('0')"><img src="Img/Dragon_Ball_0.png" alt="0 star Dragonball" /></button>
+      <button onclick="appendtoDisplay('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="clearDisplay()" class="operator-btn">C</button>
+    </div>
+  </div>
+
+  <script src="calculaitor.js"></script>
+</body>
+</html>
