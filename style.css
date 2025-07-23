@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #calculaitor { 
     font-family: Arial, sans-serif;
     background-color: rgb(63, 62, 62);
@@ -76,3 +77,83 @@ button:active {
     background-color: orange;
     color: black;
 }
+=======
+#calculaitor { 
+    font-family: Arial, sans-serif;
+    background-color: rgb(63, 62, 62);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    padding: 20px; 
+}
+
+/* BUTTON-BEREICH */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    padding: 20px;
+}
+
+/* DISPLAY */
+#display {
+    width: 100%; 
+    padding: 20px; 
+    font-size: 3rem; 
+    text-align: left;
+    border: none;
+    background-color: rgb(84, 81, 81);
+    color: white;
+}
+
+/* ZENTRIERUNG */
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    background-image: url(Img/M152Shenron-EX.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* DRAGONBALL BILDER */
+img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+/* BUTTON-STIL */
+button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(84, 81, 81);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(197, 197, 197);
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: rgb(189, 189, 189);
+}
+/* OPERATOR-BUTTONS */
+.operator-btn {
+    background-color: orange;
+    color: black;
+}
+>>>>>>> 352c732a08afb54fa8fd5bf4157405e9c7b75bfc
