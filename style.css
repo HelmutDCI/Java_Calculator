@@ -1,7 +1,8 @@
-#calculaitor { 
+@media (max-width: 600px){
+    #calculaitor { 
     font-family: Arial, sans-serif;
     background-color: rgb(63, 62, 62);
-    border-radius: 95vw;
+    border-radius: 15vw;
     max-width: 500px;
     overflow: hidden;
     padding: 10px; 
@@ -25,24 +26,11 @@
     background-color: rgb(84, 81, 81);
     color: white;
 }
-
-/* ZENTRIERUNG */
-body {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    height: 100vh;
-    background-image: url(Img/M152Shenron-EX.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 /* DRAGONBALL BILDER */
 img {
     width: 100%;
     height: auto;
+    object-fit: contain;
     margin: 0px;
     border: none;
     cursor: pointer;
@@ -52,7 +40,6 @@ img {
 button {
     width: 100px;
     aspect-ratio: 1 / 1;
-    height: 100px;
     margin: 5px;
     border-radius: 10vw;
     border: none;
@@ -77,3 +64,17 @@ button:active {
     background-color: orange;
     color: black;
 }
+}
+/* ZENTRIERUNG */
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    background-image: url(Img/M152Shenron-EX.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
